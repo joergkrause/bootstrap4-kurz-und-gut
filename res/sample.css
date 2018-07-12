@@ -17,8 +17,9 @@ body {
   height: 400px;
 }
 
-.carousel-item img {
-  max-height: 170px;
+.carousel-item > img {
+  height: 250px;
+  margin-bottom: 150px;
 }
 
 [class^=col] {
@@ -54,3 +55,4 @@ colgroup col.warning {
 colgroup col.info {
   background-color: #d9edf7;
 }
+
