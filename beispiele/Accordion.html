@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Akkordion</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample" id="example">
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card card-success"
+            role="tab">
+        <h4 class="card-header"
+            id="headingOne">
+          <a href="#collapseOne" class="card-link"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              aria-expanded="true" 
+              aria-controls="collapseOne">
+          Gruppe 1</a>
+        </h4>
+        <div id="collapseOne"
+              class="collapse in"
+              role="tabpanel"
+              aria-labelledby="headingOne">
+          <div class="card-body card-text">
+            Viel Text in Gruppe 1.
+          </div>
+        </div>
+      </div>
+      <div class="card"
+            role="tab">
+        <h4 class="card-header"
+            id="headingTwo">
+          <a href="#collapseTwo" class="card-link"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              aria-expanded="false" 
+              aria-controls="collapseTwo">Group 2</a>
+        </h4>
+        <div id="collapseTwo"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="headingTwo">
+          <div class="card-body card-text">
+            Viel Text in Gruppe 2.
+          </div>
+        </div>
+      </div>
+      <div class="card"
+            role="tab">
+        <h4 class="card-header"
+            id="headingThree">
+          <a href="#collapseThree" class="card-link"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              aria-expanded="false" 
+              aria-controls="collapseThree">
+          Gruppe 3</a>
+        </h4>
+        <div id="collapseThree"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="headingThree">
+          <div class="card-body card-text">
+            Viel Text in Gruppe 3.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

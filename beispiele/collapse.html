@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Collapse</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+  
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample" id="example">
+    <a class="btn btn-primary" 
+        role="button"
+        data-toggle="collapse" 
+        href="#collapseExample"
+        aria-expanded="false" 
+        aria-controls="collapseExample">
+      Link benutzen
+    </a>
+    <button class="btn btn-outline-danger" 
+            type="button"
+            data-toggle="collapse" 
+            data-target="#collapseExample"
+            aria-expanded="false" 
+            aria-controls="collapseExample">
+      Schaltfläche benutzen
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body card-text">
+        Der Inhalt, der in diesem Bereich gezeigt wird, ist dynamisch...
+      </div>
+    </div>
+  </div>
+</body>
+</html>

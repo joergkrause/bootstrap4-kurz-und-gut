@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid</title>
+    <meta charset="utf-8" />
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <style>
+        .sample {
+            font-size: 150%;
+            border: 1px dotted silver;
+            padding: 15px;
+        }
+
+        [class^=col] {
+            border: 1px solid blue;
+        }
+
+        body {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container sample">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-8">
+                Klein: 12 Tablet: 6 Groß: 8
+            </div>
+            <div class="col-sm-6 col-md-4">
+                Klein: 6 Groß: 4
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">A Klein: 6 Tablet: 4</div>
+            <div class="col-sm-6 col-md-4">B Klein: 6 Tablet: 4</div>
+            <!-- Optional: Wrap at different height -->
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-sm-6 col-md-4">C Klein: 6 Tablet: 4</div>
+        </div>
+    </div>
+</body>
+</html>

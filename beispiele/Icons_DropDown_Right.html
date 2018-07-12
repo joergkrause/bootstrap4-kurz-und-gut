@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Icon</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+  <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      font-size: 150%;
+      width: 550px;
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+
+    img {
+      width: 25%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button"
+                  id="dropdownMenu1" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="true">
+            Herunterklappen
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+            <a class="dropdown-item" href="#">Bearbeiten</a>
+            <a class="dropdown-item" href="#">Löschen</a>
+            <a class="dropdown-item" href="#">Details</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" disabled>Block</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

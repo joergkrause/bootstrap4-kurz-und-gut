@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      font-size: 125%;
+      width: 550px;
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample">
+    <form>
+      <div class="form-group row">
+        <label class="col-sm-2 form-control-label"
+                for="formGroupInputLarge">Großes Label</label>
+        <div class="col-sm-10">
+          <input class="form-control form-control-lg" type="text"
+                  id="formGroupInputLarge" placeholder="Große Eingabe">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 form-control-label small"
+                for="formGroupInputSmall">Kleines Label</label>
+        <div class="col-sm-10">
+          <input class="form-control form-control-sm" type="text"
+                  id="formGroupInputSmall" placeholder="Kleine Eingabe">
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      font-size: 150%;
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    [class^=col] {
+      border: 1px solid blue;
+    }
+
+    body {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample">
+    <div class="row">
+      <div class="col-xs flex-xs-last">
+        Erster im Markup <br>
+        Letzter im Layout <br>
+        flex-xs-last
+      </div>
+      <div class="col-xs flex-xs-first">
+        2nd im Markup <br>
+        Erster im Layout <br>
+        flex-xs-first
+      </div>
+      <div class="col-xs flex-xs-unordered">
+        3rd im Markup <br>
+        Ungeordnet im Layout <br>
+        flex-xs-unordered
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs flex-xs-last flex-md-first" id="blue">
+        flex-xs-last <br>
+        flex-md-first <br>
+        Letzter auf XS Bildschirm<br>
+        Erster bei MD und mehr
+      </div>
+      <div class="col-xs flex-xs-first flex-md-last" id="red">
+        flex-xs-first <br>
+        flex-md-last <br>
+        Erster auf XS Bildschirm <br>
+        Letzter bei MD und mehr
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

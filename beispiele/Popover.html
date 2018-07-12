@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+  <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/tether/dist/js/tether.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      font-size: 150%;
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+  </style>
+  <script>
+    $(function () {
+      $('#example button').popover();
+    });
+  </script>
+</head>
+<body>
+  <div class="container sample" id="example">
+    <button type="button" class="btn btn-secondary"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="left"
+            data-content="Dies ist ein hilfreicher Text.">
+      Links platziert
+    </button>
+
+    <button type="button" class="btn btn-secondary"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="top"
+            data-content="Dies ist ein hilfreicher Text.">
+      Platziert oben
+    </button>
+
+    <button type="button" class="btn btn-secondary"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="bottom"
+            data-content="Dies ist ein hilfreicher Text.">
+      Unten platziert
+    </button>
+
+    <button type="button" class="btn btn-secondary"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="right"
+            data-content="Dies ist ein hilfreicher Text.">
+      Rechts platziert
+    </button>
+  </div>
+</body>
+</html>

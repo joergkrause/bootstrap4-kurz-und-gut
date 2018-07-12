@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms</title>
+  <meta charset="utf-8" />
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <style>
+    .sample {
+      font-size: 125%;
+      width: 550px;
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample">
+    <div class="row">
+      <form>
+        <div class="input-group-lg">
+          <input class="form-control input-lg"
+                  type="text" placeholder="Groß">
+        </div>
+        <div class="input-group-md">
+          <input class="form-control"
+                  type="text" placeholder="Normal">
+        </div>
+        <div class="input-group-sm">
+          <input class="form-control input-sm"
+                  type="text" placeholder="Klein">
+        </div>
+        <div class="input-group-lg">
+          <select class="form-control input-lg">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-group-md">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="input-group-sm">
+          <select class="form-control input-sm">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
