@@ -1,0 +1,57 @@
+.sample {
+  border: 1px dotted silver;
+  padding: 15px;
+}
+
+.sample-form {
+  font-size: 125%;
+  width: 550px;
+}
+
+body {
+  margin: 50px;
+}
+
+.carousel {
+  background-color: silver;
+  height: 400px;
+}
+
+.carousel-item img {
+  max-height: 170px;
+}
+
+[class^=col] {
+  border: 1px solid blue;
+}
+
+.row {
+  height: 100px;
+  background-color: lightblue;
+  margin: 5px 0 0 0;
+}
+
+.progress-bar > span {
+  color: black;
+  position: relative;
+  top: -30px;
+  display: block;
+  font-size: 80%;
+  content: attr(value)
+}
+
+colgroup col.success {
+  background-color: #dff0d8;
+}
+
+colgroup col.error {
+  background-color: #f2dede;
+}
+
+colgroup col.warning {
+  background-color: #fcf8e3;
+}
+
+colgroup col.info {
+  background-color: #d9edf7;
+}

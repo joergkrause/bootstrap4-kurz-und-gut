@@ -4,28 +4,16 @@
   <title>Forms</title>
   <meta charset="utf-8"/>
   <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
-
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <style>
-    .sample
-    {
-      font-size: 125%;
-      width: 450px;
-      border: 1px dotted silver;
-      padding: 15px;
-    }
-    body, form {
-      margin: 20px;
-    }
-  </style>
+  <link href="../res/sample.css" rel="stylesheet" type="text/css" />
 <script>
   (function() {
     'use strict';
     window.addEventListener('load', function() {
-      // All Forms
+      // Alle Form-Elemente
       var forms = document.getElementsByClassName('needs-validation');
-      // Handle submit buttons
+      // Submit-Schaltfläche behandeln
       var validation = Array.prototype.filter.call(forms, function(form) {
         form.addEventListener('submit', function(event) {
           if (form.checkValidity() === false) {
