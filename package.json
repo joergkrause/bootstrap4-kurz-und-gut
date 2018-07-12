@@ -1,21 +1,20 @@
 {
   "name": "bootstrap4-book",
   "version": "1.0.0",
-  "description": "The book has been published by *texxtoor* and is available from LeanPub and Amazon:",
-  "main": "index.js",
+  "description": "Dies ist der Code für das Buch 'Bootstrap kurz & gut', erschienen bei O'Reilly",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joergkrause/bootstrap4-book.git"
+    "url": "git+https://github.com/joergkrause/bootstrap4-kurz-gut.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joergkrause/bootstrap4-book/issues"
+    "url": "https://github.com/joergkrause/bootstrap4-kurz-und-gut/issues"
   },
-  "homepage": "https://github.com/joergkrause/bootstrap4-book#readme",
+  "homepage": "https://github.com/joergkrause/bootstrap4-kurz-und-gut#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",

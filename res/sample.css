@@ -25,8 +25,7 @@ body {
   border: 1px solid blue;
 }
 
-.row {
-  height: 100px;
+.sample-row {
   background-color: lightblue;
   margin: 5px 0 0 0;
 }

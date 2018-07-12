@@ -10,19 +10,18 @@
 </head>
 <body>
   <div class="container sample sample-col">
-    <div class="row flex-items-xs-middle">
-      <div class="col-xs">Reihe: flex-items-xs-middle</div>
+    <div class="d-flex flex-row">
+      <div class="col-xs">Reihe: Links</div>
+      <div class="col-xs">Reihe: Links</div>
     </div>
-    <div class="row flex-items-xs-bottom">
-      <div class="col-xs">Reihe: flex-items-xs-bottom</div>
+    <div class="d-flex flex-row-reverse">
+      <div class="col-xs">Reihe: Rechts</div>
+      <div class="col-xs">Reihe: Rechts</div>
     </div>
-    <div class="row flex-items-xs-top">
-      <div class="col-xs">Reihe: flex-items-xs-top</div>
-    </div>
-    <div class="row">
-      <div class="col-xs flex-xs-top">Spalte: flex-xs-top</div>
-      <div class="col-xs flex-xs-middle">Spalte: flex-xs-middle</div>
-      <div class="col-xs flex-xs-bottom">Spalte: flex-xs-bottom</div>
+    <div class="row" style="height:80px">
+      <div class="col-xs d-flex align-items-start">Spalte: Oben</div>
+      <div class="col-xs d-flex align-items-center">Spalte: Mitte</div>
+      <div class="col-xs d-flex align-items-end">Spalte: Unten</div>
     </div>
   </div>
 </body>
