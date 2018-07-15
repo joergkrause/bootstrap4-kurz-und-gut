@@ -28,21 +28,21 @@
   </script>
 </head>
 <body>
-<div class="container sample">
+<div class="container sample sample-form">
   <div class="row">
     <form class="needs-validation" novalidate>
       <div class="form-group">
         <label for="input1">
           Erfolgsmeldung
         </label>
-        <input type="text" class="form-control" id="input1" required />
+        <input type="text" value="Test" class="form-control" id="input1" required />
         <div class="valid-feedback text-success">Okay</div>
       </div>
       <div class="form-group">
         <label for="input2">
           Eine Warnung
         </label>
-        <input type="text" value="Test" class="form-control" id="input2" required />
+        <input type="text" value="" class="form-control" id="input2" required />
         <div class="invalid-feedback text-warning">Nicht Okay</div>
       </div>
       <div class="form-group">
@@ -52,20 +52,20 @@
         <input type="text" class="form-control" id="input3" required />
       </div>
       <div class="custom-checkbox">
-        <label class="col-form-label">
+        <label class="col-form-label text-success">
           <input type="checkbox" id="checkboxSuccess" value="option1" />
           Erfolgreich
         </label>
       </div>
       <div class="checkbox">
-        <label class="col-form-label">
+        <label class="col-form-label text-warning">
           <input type="checkbox" required
                   id="checkboxWarning" value="option1" />
           Warnung
         </label>
       </div>
       <div class="checkbox">
-        <label class="col-form-label">
+        <label class="col-form-label text-error">
           <input type="checkbox" id="checkboxError" 
                   value="option1" required />
           Fehlerbedingung

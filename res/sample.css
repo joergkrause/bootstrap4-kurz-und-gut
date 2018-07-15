@@ -5,7 +5,7 @@
 
 .sample-form {
   font-size: 125%;
-  width: 550px;
+  width: 650px;
 }
 
 body {
@@ -24,6 +24,9 @@ body {
 
 [class^=col] {
   border: 1px solid blue;
+}
+[class*=col-form-label] {
+  border: none;
 }
 
 .sample-row {
