@@ -28,6 +28,9 @@ body {
 [class*=col-form-label] {
   border: none;
 }
+.nocol [class^=col] {
+  border: 1px solid white;
+}
 
 .sample-row {
   background-color: lightblue;
