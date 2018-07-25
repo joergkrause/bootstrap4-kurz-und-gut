@@ -4,6 +4,7 @@
   "description": "Dies ist der Code für das Buch 'Bootstrap kurz & gut', erschienen bei O'Reilly",
   "main": "srv/index.js",
   "scripts": {
+    "start": "node ./srv/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,4 +23,7 @@
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
   },
+  "devDependencies": {
+    "node-html-parser": "^1.1.8"
+  }
 }

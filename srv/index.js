@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const http = require('http');
 const url = require('url'); // built-in utility
+const parse = require('node-html-parser');
 
 const port = 8000;
 const testFolder = './beispiele/';
@@ -80,7 +81,10 @@ class FileReader {
 
   fillTemplate(html){
     let replacement = this.fileNames.map((file) => {
-      return `<li class="list-group-item"><a href="${file}" target="bt">${file.replace('.html', '')}</a></li>`;
+      let fc = fs.readFileSync(path.join(__dirname, '../beispiele', file));
+      let parsedHtml = parse(fc.toString());
+      let title = parsedHtml.querySelector('title').text;
+      return `<li class="list-group-item"><a href="${file}" target="bt">${file.replace('.html', '')} (${title})</a></li>`;
     });
     return html.replace('{{}}', `<ul class="list-group">${replacement.join('')}</ul>`);
   }
