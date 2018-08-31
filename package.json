@@ -1,7 +1,7 @@
 {
   "name": "bootstrap4-book",
   "version": "1.0.0",
-  "description": "Dies ist der Code für das Buch 'Bootstrap kurz & gut', erschienen bei O'Reilly",
+  "description": "Dies ist der Beispielcode für das Buch 'Bootstrap kurz & gut', erschienen bei O'Reilly August 2018",
   "main": "srv/index.js",
   "scripts": {
     "start": "node ./srv/index.js",
