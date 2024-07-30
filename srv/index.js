@@ -100,6 +100,12 @@ class FileReader {
 
   serveContent() {
     const server = http.createServer((req, res) => {
+    if (path.normalize(decodeURI(url.parse(req.url).pathname)) !== decodeURI(url.parse(req.url).pathname)) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
+ 
       let contentType = this.getMimeType(req.url);
       let sanitizedUrl = url.parse(req.url).pathname;
       switch (sanitizedUrl) {
